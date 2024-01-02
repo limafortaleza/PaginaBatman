@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body{
+    background-position: 20% 0%;
+    background-size: cover;
+    /* background-blend-mode:screen; */
+    background-color: #000000;
+    background-image: url('https://i0.wp.com/multarte.com.br/wp-content/uploads/2018/12/fundo-vermelho-escuro46.jpg?fit=1200%2C800&ssl=1');
+    height:105vh; /*indica que a altura é igual a a altura da tela do navegador
+    Se colocar por exmplo 200vh o body vai passar a ter um scroll*/
+    width:100vw; /*vw= view width e vh= view height*/
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    color:#fff;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none; /*retira os pontos da frente da lista*/
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover{
+    color: #d21617;   
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+}
+
+h1{
+    height: 70px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    justify-content: center;
+    
+}
+
+.photoscard-caracter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    
+
+
+}
+.mestre{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 650px;
+    
+}
+
+.card {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /*texto do card*/
+    padding-bottom:5px;
+    color:#fff;
+    font-size: 17px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    column-gap: 10px;
+}
+.card:hover {
+    transform: scale(1.2);
+}
+
+.photo1{
+    background-image: url('https://poltronanerd.com.br/wp-content/uploads/2023/01/the-batman-robert-pattinson-1.jpg');
+    
+}
+
+.photo2{
+    background-image: url('https://www.revistabula.com/wp/wp-content/uploads/2022/03/O-Cavaleiro-das-Trevas.jpg');
+}
+
+.photo3{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg');
+}
+
+.photo4{
+    background-image: url('https://mixdeseries.com.br/wp-content/uploads/2022/12/Batman-O-Retorno-6.webp');
+}
+
+.photo5{
+    background-image: url('./1.jpg');
+}
+
+.photo6{
+    background-image: url('./2.png');
+}
+
+.photo7{
+    background-image: url('./3.png');
+}
+
+.photo8{
+    background-image: url('./4.png');
+}
+
+.photo9{
+    background-image: url('./5.jpg');
+}
+
+.photo10{
+    background-image: url('./6.jpg');
+}
+
+.photo11{
+    background-image: url('./7.jpg');
+}
+
+.photo12{
+    background-image: url('./8.jpg');
+}
+
+.photo13{
+    background-image: url('./9.png');
+}
+
+.photo14{
+    background-image: url('./10.JPG');
+}
+
+.photo15{
+    background-image: url('./11.JPG');
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    font-size: 15px;
+}
+
+.footer-navigation{
+    display: none; /*ele desaparece e reaparece na responsividade , colocando disply:block*/
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-footer{
+    width: 100px;
+}
+
+@media(max-width:768px){/*quando a tela tiver 768px de largura aplica-se a regra da responsividade*/
+    .footer-navigation{
+        display: block;
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    nav{ /*quando tiver na versao mobile o nav do inicio da pagina nao precisa mais aparecer*/
+        display: none;
+    }
+
+    .photoscard-caracter{
+        display: block;
+
+    }
+    .mestre{
+        width: 95%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        column-gap: 5px;
+    }
+
+   
+    
+}

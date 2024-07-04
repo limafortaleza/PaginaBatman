@@ -23,35 +23,36 @@
 
     </header>
 
-    <h1>CONTATE-NOS</h1>
-    
-    
-        <div class="formulario">
-            
-            <div id="informacoes">
-                <div class="telefone">☏ Telefones<p> (85) 3452.4578 </p><p> (85) 98866.3737</p> </div>
-                <div class="email">✉ Email <p> batmanoretorno@batman2022.com</p> </div>
-                <div class="endereco">⦿ Endereço <p> Rua Alameda dos anjos, 54 
-                    <p> Jaboatão dos Guararapes </br> Recife - Pernambuco CEP: 60.430-540</p> </div>
+    <div class="corpo">
+        <h1 class="titulo_contate_nos">CONTATE-NOS</h1>
         
-            </div>  
-
-            <form action="./index.html">
-              
-                    <label for="fname">Nome:</label><br>
-                    <input type="text" id="fname" name="name" placeholder="Digite seu nome"><br>
-
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email"><br>
-
-                    <label for="mensagem">Mensagem:</label><br>
-                    <textarea id="bloco" name="mensagem" cols="30" rows= "15" placeholder="Digite sua dúvida aqui."></textarea><br>
-                    
-                    <button class="button"> Enviar</button>
+        
+            <div class="formulario">
                 
-            </form>
+                <div id="informacoes">
+                    <div class="telefone">☏ Telefones<p> (85) 3452.4578 </p><p> (85) 98866.3737</p> </div>
+                    <div class="email">✉ Email <p> batmanoretorno@batman2022.com</p> </div>
+                    <div class="endereco">⦿ Endereço <p> Rua Alameda dos anjos, 54 
+                        <p> Jaboatão dos Guararapes </br> Recife - Pernambuco CEP: 60.430-540</p> </div>
+            
+                </div>  
 
+                <form id="forms" class = "formulario1" action="./index.html">
+                
+                        <label for="fname">Nome:</label><br>
+                        <input type="text" id="fname" name="name" placeholder="Digite seu nome"><br>
+
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email"><br>
+
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="bloco" name="mensagem" cols="30" rows= "15" placeholder="Digite sua dúvida aqui."></textarea><br>
+                        
+                        <button id="botao" class="button"> Enviar</button>
                     
+                </form>
+                        
+            </div>
         </div>
         
         <footer>
@@ -69,6 +70,6 @@
             </nav>
     
         </footer>
-        
+    <script src="/scriptcontato.js"></script>
 </body>
 </html>

@@ -7,10 +7,6 @@
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-body{
-    background-image: url('https://rare-gallery.com/mocahbig/1376847-the-batman-2022-movie-4k-pc-wallpaper.jpg');
-    background-position: 20% 0%;
-}
 
 header{
     height: 70px;
@@ -19,6 +15,13 @@ header{
     align-items: center;
     background-color: #000;
     color:#fff;
+}
+
+body{
+    
+    background-image: url('https://i0.wp.com/multarte.com.br/wp-content/uploads/2018/12/fundo-vermelho-escuro46.jpg?fit=1200%2C800&ssl=1');
+    background-size: cover;
+    height:100vh;
 }
 
 #logo{
@@ -49,62 +52,59 @@ li:hover{
     color: #d21617;   
 }
 
-h1{
+.titulo_contate_nos{
     height: 130px;
     display: grid;
-    flex-direction: column;
     align-items: center;
-    color: aliceblue;
+    color: #ffffff;
     justify-content: center;
+    
     
 }
 
 .formulario{
-    width: 49% ;
+    width: 95% ;
     color: rgb(255, 255, 255);
     display: flex;
-    align-items: start;
-    justify-content: start;
-    margin-left: 193px;
-    
-    
-
+    align-items: center;
+    justify-content: center;
+ 
 }
 
 input{
-    color: #0000009c;
+    
     font-family: 'Kdam Thmor Pro', sans-serif;
-    width: 100%;
+    width: 95%;
     height: 50px;
     outline: none;
     font-size:15px;
     border:none;
-    background-color:#ffffff70; ;
     border-radius: 7px;
+    padding: 10px;
     
 }
 
 label{
     font-size: 20px;
+    color: #f78a8a;
 }
 
 textarea{
     color: #0000009c;
-    width: 100%;
+    width: 95%;
     border: none;
-    background-color:#ffffff70; ;
     border-radius: 7px;
     outline: none;
-    
-       
+    padding: 10px;
+    font-size: 15px;
 }
 
 .button{
     
         width: 50%;
         height: 60px;
-        background-color: #d21617;
-        color: #fff;
+        background-color: #ffffff;
+        color: #d21617;
         padding: 8px 10px;
         border-radius: 5px;
         cursor: pointer;
@@ -123,29 +123,28 @@ textarea{
 
 .button:hover{
 
-    background-color: #fff;
-    color: #000;
+    background-color:rgb(113, 113, 113);
+    color: #ffffff;
 }
 
 #informacoes{
-    width: 45%;
-    display: grid;
-    row-gap: 116px;
-    color: #fff;
+    width: 20%;
+    display: flex;
+    row-gap: 38px;
+    color: #f78a8a;
     font-size: 20px;
-    align-items: start;
-    margin-left: 100px;  
-    margin-right: 50px; 
-    height: 570px
+    align-items: flex-start;
+    flex-direction: column;
+    
 }
 
 p{
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.747);
+    color: #f78a8a;
 }
 
 footer{
-    height: 300px;
+    height: 130px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -173,6 +172,16 @@ span{
     align-items: center;
 }
 
+.formulario1{
+    
+    border: 3px solid #d21617;
+    border-radius: 9px;
+    padding: 10px 15px;
+    width: 30%;
+    justify-content:flex-start;
+
+}
+
 @media(max-width:768px){/*quando a tela tiver 768px de largura aplica-se a regra da responsividade*/
     
     .footer-navigation{
@@ -187,7 +196,7 @@ span{
         display: flex;
         flex-direction: column;
         align-items:center;
-        justify-content:left;
+        justify-content:flex;
         margin-left: auto;
     }
 
@@ -212,5 +221,15 @@ span{
     display: none;
     }
 
-   
+    .formulario1{
+    
+        border: 3px solid #d21617;
+        border-radius: 9px;
+        padding: 10px 15px;
+        width: 90%;
+        justify-content:flex-start;
+    
+    }
+    
+    
 }
